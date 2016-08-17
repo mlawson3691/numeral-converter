@@ -11,9 +11,16 @@ var translate = function(word) {
     return word + firstLetter + "ay";
   }
   else if ((consonants.indexOf(word.charAt(0)) >= 0) || (word.charAt(0) === "y")) {
-
-
-    // for (var i = 1)
+    for (var i = 1; i<word.length; i++) {
+      if (vowels.indexOf(word.charAt(i)) >= 0) {
+        firstLetter = word.slice(0,i);
+        word = word.slice(i,word.length);
+        return word + firstLetter + "ay";
+      }
+      else {
+        return word + "ay";
+      }
+    }
   }
   else {
     return word;
