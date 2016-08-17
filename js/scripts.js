@@ -43,6 +43,7 @@ $(function(){
 
 
     var results = textArray.join(" ");
+    results = results.charAt(0).toUpperCase() + results.slice(1,results.length);
     $('#results').text(results);
   })
 
