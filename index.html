@@ -13,14 +13,17 @@
     <h1>Numeral System Converter</h1>
     <p>Convert a number into decimal</p>
     <form class="" action="index.html" method="post">
-      <label for="">Enter a number form:</label>
+      <label for="">X-Numeral:</label>
       <input id="numeral" type="text" name="name" value="">
-      <label for="">What numeral system are you using? (will only convert from 1-9)</label>
-      <input id="numeralSystem" type="text" name="name" value="">
-      <label for="">Output in decimal form</label>
+      <label for="">Decimal</label>
       <input id="decimal" type="text">
-      <button id="submitNumeral" type="button" name="button">Convert to Decimal</button>
-      <button id="submitDecimal" type="button" name="button">Convert to Numeral</button>
+      <label for="">What numeral system are you using? (will only convert from 2-9)</label>
+      <input id="numeralSystem" type="text" name="name" value="">
+      <div class="">
+        <button class="btn btn-danger btn-lg" id="submitNumeral" type="button" name="button">Convert to Decimal</button>
+        <button class="btn btn-success btn-lg" id="submitDecimal" type="button" name="button">Convert to Numeral</button>
+      </div>
+
     </form>
     <p id="results"> </p>
 

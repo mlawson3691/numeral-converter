@@ -27,15 +27,19 @@ $(function(){
     $("#decimal").val(result);
   });
   $("#submitDecimal").click(function(){
-    var input = $("#decimal");
+    debugger;
+    var input = $("#decimal").val();
     var numeralSystem = parseInt($("#numeralSystem").val());
     var numeralArray = [];
+    var remainder;
     while(input >= 1) {
-      var remainder = input % numeralSystem;
+      remainder = input % numeralSystem;
       input -= remainder;
       input /= numeralSystem;
       numeralArray.unshift(remainder);
     }
+    var result = numeralArray.join("");
+    console.log(result);
 
     $("#numeral").val(result);
   })
