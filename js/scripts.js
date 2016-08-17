@@ -22,6 +22,9 @@ var translate = function(word) {
       }
     }
   }
+  else if (vowels.indexOf(word.charAt(0)) >= 0) {
+    return word + "ay";
+  }
   else {
     return word;
   }
