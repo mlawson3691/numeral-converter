@@ -5,7 +5,7 @@ var allLetters = vowels.concat(consonants);
 var firstLetter;
 
 var translate = function(word) {
-  if (word.charAt(0) === "q") {
+  if (word.charAt(0) === "q" && word.charAt(1) === "u") {
     firstLetter = "qu";
     word = word.slice(2, word.length);
     return word + firstLetter + "ay";
