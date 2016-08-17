@@ -17,10 +17,8 @@ var translate = function(word) {
         word = word.slice(i,word.length);
         return word + firstLetter + "ay";
       }
-      else {
-        return word + "ay";
-      }
     }
+    return word + "ay";
   }
   else if (vowels.indexOf(word.charAt(0)) >= 0) {
     return word + "ay";
