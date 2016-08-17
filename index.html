@@ -7,13 +7,20 @@
     <script src="js/jquery-3.1.0.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
-    <title>Pig Latin</title>
+    <title>A very respectable converter</title>
   </head>
   <body>
-    <h1>Pig Latin Translator</h1>
+    <h1>Numeral System Converter</h1>
+    <p>Convert a number into decimal</p>
     <form class="" action="index.html" method="post">
-      <input id="textInput" type="input" name="name" value="">
-      <button id="textInputButton" type="submit" name="button">Submit</button>
+      <label for="">Enter a number form:</label>
+      <input id="numeral" type="text" name="name" value="">
+      <label for="">What numeral system are you using? (will only convert from 1-9)</label>
+      <input id="numeralSystem" type="text" name="name" value="">
+      <label for="">Output in decimal form</label>
+      <input id="decimal" type="text">
+      <button id="submitNumeral" type="button" name="button">Convert to Decimal</button>
+      <button id="submitDecimal" type="button" name="button">Convert to Numeral</button>
     </form>
     <p id="results"> </p>
 
