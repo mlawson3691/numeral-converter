@@ -1,18 +1,12 @@
-# _Pig Latin Translator_
+# _Numeral Converter_
 
-#### _A website to translate a string into Pig Latin, August 17, 2016_
+#### _A website to convert numerals, August 17, 2016_
 
 #### By _**Mark Lawson & Chris Martinez**_
 
 ## Description
 
-_This website will take an inputted string from the user and display it in pig latin. The script will remove the first letter or letters and append it to the end of the word, followed by "ay"._
-_The specs to follow include:_
-_Add "ay" to a word starting with a vowel. Ex: "ant" will return "antay"_
-_A word starting with a consonant will move the first consonants to the end. Ex: "clam" will return "amclay"_
-_Words starting with y, will treat y as a consonant. Ex: "yell" will return "ellyay"_
-_Words starting with "q" will move "qu" to the end. Ex: "quest" will return "estquay"_
-_Non-alphabetical characters are returned unchanged. Ex: "3" will return "3"_
+_This website will convert a number between its decimal form and its numeral form (binary, etc)._
 
 ## Setup/Installation Requirements
 
